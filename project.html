@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT: TEAM PLAYER</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link rel="stylesheet" href="projectstyle.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">Sign-in</button>
+            <div class="dropdown-content">
+                <a href="index.html">Sign-In</a>
+                <a href="https://c2escarda.github.io/FV_ICT10_Q3SKILLSTEST_ESCARDA_GIOVANNI/">Escarda</a>
+                <a href="https://resosalpapunen.github.io/FV_ICT10_Q3SkilsTest_Salapunen_Riso/">Salapunen</a>
+                <a href="https://alextacan.github.io/FV_ICT10_Q3SkillsTest_Tacan_Alexander/">Tacan</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Team Finder</button>
+            <div class="dropdown-content">
+                <a href="seatwork2.html">Team Finder</a>
+                <a href="https://c2escarda.github.io/FV_ICT10_Q3SEATWORK2_ESCARDA_GIOVANNI/">Escarda</a>
+                <a href="https://alextacan.github.io/FV_ICT10_Q3Seatwork2_Tacan_Alexander/">Tacan</a>
+            </div>
+        </div>
+        <a href="project.html" class="nav-link">Project</a>
+    </nav>
+    <div class="container">
+        <h1>Team Members!</h1>
+        <p>don't know what team you are?<a href="seatwork2.html">Come find out!</a></p>
+
+        <form>
+        <select name="TEAM" id="TEAM">
+        <option value="Placeholder">Select your team</option>
+        <option value="Blue Bears">Blue Bears</option>
+        <option value="Red Bulldogs">Red Bulldogs</option>
+        <option value="Yellow Tigers">Yellow Tigers</option>
+        <option value="Green Hornets">Green Hornets</option>
+        </select>
+        </form>
+
+        <button py-click="TeamPlays">Find your Players!</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script type="py" src="projectmain.py">
+    </script>
+</body>
+</html>

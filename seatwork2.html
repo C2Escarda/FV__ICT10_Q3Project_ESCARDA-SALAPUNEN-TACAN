@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SW:TEAM ASSIGNMENT </title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link rel="stylesheet" href="sw2style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">Sign-in</button>
+            <div class="dropdown-content">
+                <a href="index.html">Sign-In</a>
+                <a href="https://c2escarda.github.io/FV_ICT10_Q3SKILLSTEST_ESCARDA_GIOVANNI/">Escarda</a>
+                <a href="https://resosalpapunen.github.io/FV_ICT10_Q3SkilsTest_Salapunen_Riso/">Salapunen</a>
+                <a href="https://alextacan.github.io/FV_ICT10_Q3SkillsTest_Tacan_Alexander/">Tacan</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Team Finder</button>
+            <div class="dropdown-content">
+                <a href="seatwork2.html">Team Finder</a>
+                <a href="https://c2escarda.github.io/FV_ICT10_Q3SEATWORK2_ESCARDA_GIOVANNI/">Escarda</a>
+                <a href="https://alextacan.github.io/FV_ICT10_Q3Seatwork2_Tacan_Alexander/">Tacan</a>
+            </div>
+        </div>
+        <a href="project.html" class="nav-link">Project</a>
+    </nav>
+    <div class="container">
+        <h1>Team Assignment</h1>
+        
+        <form>
+            <p>Are you done with your Online Registration?</p>
+            <input type="radio" id="OR-Yes" name="OR" value="Yes"> <label for="OR-Yes">Yes</label>
+             <input type="radio" id="OR-No" name="OR" value="No"> <label for="OR-No">No</label> <br>
+             <p>Do you have Medical Clearance from the Clinic?</p>
+            <input type="radio" id="MC-Yes" name="MC" value="Yes"> <label for="MC-Yes">Yes</label>
+             <input type="radio" id="MC-No" name="MC" value="No"> <label for="MC-No">No</label>
+        </form>
+        <label for="GL">Grade Level:</label>
+        <select name="GL" id="GL">
+        <option value="Placeholder"></option>
+        <option value="Twelve">12</option>
+        <option value="Eleven">11</option>
+        <option value="Ten">10</option>
+        <option value="Nine">9</option>
+        <option value="Eight">8</option>
+        <option value="Seven">7</option>
+        </select>
+        <br>
+        <label for="Section">Grade Section:</label>
+        <select name="GS" id="GS">
+        <option value="Placeholder"></option>
+        <option value="Topaz">Topaz</option>
+        <option value="Sapphire">Sapphire</option>
+        <option value="Ruby">Ruby</option>
+        <option value="Emerald">Emerald</option>
+        <option value="Jade">Jade</option>
+        <option value="Amarsolo">Amarsolo</option>
+        <option value="Luna">Luna</option>
+        <option value="Jose">Jose</option>
+        <option value="Tinio">Tinio</option>
+        </select>
+
+        <br><br>
+        <button py-click="teamassigner">FIND YOUR TEAM</button>
+
+        <div id="result"></div>
+    </div>
+    
+    <script type="py" src="sw2main.py">
+    </script>
+</body>
+</html>

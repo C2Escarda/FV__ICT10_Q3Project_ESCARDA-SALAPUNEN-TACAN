@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKILLS TEST: SIGNING IN</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">Sign-in</button>
+            <div class="dropdown-content">
+                <a href="index.html">Sign-In</a>
+                <a href="https://c2escarda.github.io/FV_ICT10_Q3SKILLSTEST_ESCARDA_GIOVANNI/">Escarda</a>
+                <a href="https://resosalpapunen.github.io/FV_ICT10_Q3SkilsTest_Salapunen_Riso/">Salapunen</a>
+                <a href="https://alextacan.github.io/FV_ICT10_Q3SkillsTest_Tacan_Alexander/">Tacan</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Team Finder</button>
+            <div class="dropdown-content">
+                <a href="seatwork2.html">Team Finder</a>
+                <a href="https://c2escarda.github.io/FV_ICT10_Q3SEATWORK2_ESCARDA_GIOVANNI/">Escarda</a>
+                <a href="https://alextacan.github.io/FV_ICT10_Q3Seatwork2_Tacan_Alexander/">Tacan</a>
+            </div>
+        </div>
+        <a href="project.html" class="nav-link">Project</a>
+    </nav>
+    <div class="container">
+        <h1>Sign-In</h1>
+        <p>Already have an account? <a href="login.html">Log in.</a></p>
+
+
+        <input type="text" id="Username" min="1" max="100" placeholder="Username">
+
+        <input type="password" id="Password" min="8" max="100" placeholder="Password">
+
+        <button py-click="Signing_in">Sign-in!</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script type="py" src="main.py">
+    </script>
+</body>
+</html>
